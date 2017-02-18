@@ -1,0 +1,19 @@
+{
+  "name": "qps-limit",
+  "version": "1.0.0",
+  "description": "middleware for qps limit in express applications",
+  "keywords": ["qps", "express", "middleware"],
+  "author": "xubensheng(https://github.com/fengliner)",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "npm run lint && ./node_modules/mocha/bin/mocha",
+    "eslint": "./node_modules/eslint/bin/eslint.js --ext .js `git diff --cached --name-only | grep -e '.js$'`"
+  },
+  "pre-commit": ["eslint"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengliner/qps-limit.git"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
